@@ -1,0 +1,19 @@
+<div class="container text-center">
+  <h1>Counter App</h1>
+
+  <div>{{ count | async }}</div>
+
+  <div class="mx-auto p-2">
+    <button type="button" (click)="onIncrement()" class="btn btn-primary">
+      Increment
+    </button>
+
+    <button type="button" (click)="onDecrement()" class="btn btn-secondary">
+      Decrement
+    </button>
+
+    <button type="reset" (click)="onReset()" class="btn btn-danger">
+      Reset
+    </button>
+  </div>
+</div>
